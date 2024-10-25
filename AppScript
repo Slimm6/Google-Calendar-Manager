@@ -1,0 +1,85 @@
+const nuciCalendarID = "INSERT CALENDER ID HERE";
+const calendar = CalendarApp.getCalendarById(nuciCalendarID);
+const start = new Date("Thurs Jan 01 00:00:00 GMT-05:00 2000");
+const end = new Date("Sat Dec 30 00:00:00 GMT-05:00 2200");
+
+function main() {
+  var allEvents = calendar.getEvents(start, end);
+  var customLog = processValidation();
+  customLog.forEach(function(log) {
+    if (!checkEvents(log, allEvents)) {
+      updateCalendar(log);
+    }
+  });
+  validationCheck(customLog, allEvents);
+}
+
+function processValidation() {
+  var rows = SpreadsheetApp.getActiveSheet().getDataRange().getValues();
+  var headers = rows.shift();
+  var log = [];
+  rows.forEach(function(row) {
+    if(row[29]) {
+      var rowData = [];
+      for(let i = 1; i < 35; i++) {
+        rowData.push(row[i]);
+      }
+      Logger.log(JSON.stringify(row));
+      log.push(rowData);
+    }
+  });
+  return log;
+}
+
+function updateCalendar(rowData, count) {
+  var event = calendar.createEvent(rowData[3], new Date(rowData[13]), new Date(rowData[14]));
+  event.setLocation(rowData[4]);
+  if(rowData[15]) {
+    Logger.log("ADDED INCOMPLETE: " + event.getTitle());
+    event.setColor(CalendarApp.EventColor.RED);
+    event.setVisibility(CalendarApp.Visibility.PRIVATE);
+    if (rowData[9]) {
+      event.setDescription(rowData[8] + "\nTargetted Audience: " + rowData[9] + "\n" + rowData[10])
+    } else {
+      event.setDescription(rowData[8] + "\n" + rowData[10]);
+    }
+  } else {
+    Logger.log("ADDED COMPLETE: " + event.getTitle());
+    event.setColor(CalendarApp.EventColor.GREEN);
+    event.setVisibility(CalendarApp.Visibility.PUBLIC);
+    if (rowData[9]) {
+      event.setDescription(rowData[8] + "\nTargetted Audience: " + rowData[9] + "\n" + rowData[10])
+    } else {
+      event.setDescription(rowData[8] + "\n" + rowData[10]);
+    }
+  }
+}
+
+function validationCheck(valid, allEvents) {
+  allEvents.forEach(function(event) {
+    var name = event.getTitle();
+    if(!nameCheck(valid, name)) {
+      Logger.log("REMOVED: " + event.getTitle());
+      event.deleteEvent();
+    }
+  });
+}
+
+function nameCheck(customLog, name) {
+  for (var i = 0; i < customLog.length; i++) {
+    if(customLog[i][3] === name) {
+      return true;
+    }
+  }
+  return false;
+}
+
+function checkEvents(log, allEvents) {
+  Logger.log(log[3]);
+  for (var i = 0; i < allEvents.length; i++) {
+    if(allEvents[i].getTitle() === log[3]) {
+      return true;
+    }
+  }
+  return false;
+}
