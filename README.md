@@ -9,7 +9,7 @@ The script runs automatically every hour. In the case of technical difficulties 
 
 If you have any questions or concerns, please don't hesitate to email **garcia.andre@northeastern.edu** with the subject **Google Calendar Manager Help**
 
-__**Set-Up**__
+# Set Up
 Get started by copying the following google sheet: https://docs.google.com/spreadsheets/d/1zCqHDdnZ2B0cgRPnOD1ce7djkkZdMZ1__bMW8m6_mWg/edit?usp=sharing
 This will also create a copy of the google form, you can access it by clicking **Tools then Manage Form.**
 
