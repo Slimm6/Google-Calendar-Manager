@@ -1,4 +1,4 @@
-# Google-Calendar-Manager
+# Google-Calendar-Manager Introduction
 The Google Calendar Manager is a Crowd-Sourcing that allows you to cultivate events from multiple different people or to manage your own events. This is done through a google form that has a connection through the google API to a google sheet. You can use this google sheet to manage a google calendar using the functionality of the spreadsheet. The code in the file above contains the script for the google sheet, allowing it to act as the middle point between the crowd-sourcing in the google form and uploading the info into a google calendar.
 
 The Functionality and Set-Up of the google sheet can be found below.
