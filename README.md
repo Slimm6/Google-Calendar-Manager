@@ -1,5 +1,6 @@
 # Google-Calendar-Manager
-A google form and sheet template that allows you to update a google calendar remotely.
+The Google Calendar Manager is a Crowd-Sourcing that allows you to cultivate events from multiple different people or to manage your own events. This is done through a google form, which feeds information into a google sheet. The functionality of how to connect the spreadsheet and set-up process can be found below.
+
 Through this application, you can easily create and verify events. All information that is inputted into the google form will automatically fill up the google sheet. 
 
 - you can check off boxes in the **Verification** section. This will cause the event to appear on the google calendar. Events that have the check removed will be taken off of the calendar.
