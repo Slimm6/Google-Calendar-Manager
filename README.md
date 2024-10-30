@@ -7,7 +7,7 @@ The Functionality and Set-Up of the Google Sheet can be found below.
 Through this application, you can easily create and verify events. All information that is inputted into the Google Form will automatically fill up the Google Sheet. 
 
 - you can check off boxes in the **Verification** section. This will cause the event to appear on the Google Calendar. Events that have the check removed will be taken off of the calendar.
-- You can also check off boxes in the **Mark as Incomplete** section. This makes events that are visible private, meaning only people with edit access of the calendar can see it. Private events are marked as red while Public events are marked as green.
+- You can also check off boxes in the **Mark as Incomplete** section. This makes events on the calendar private, meaning only people with edit access of the calendar can see it. Private events are marked as red while Public events are marked as green.
 
 The script runs automatically every hour. In the case of technical difficulties or you wish to update the Google Calendar instantly, Go into **Extensions then go into the App Script.** Then click run. This will make the google calendar update. If you also wish to see the log of what has been added or removed, you can go to the **Executions** section on the side-bar of the App Script section. There, you can see the log of what has been added and deleted from the calendar.
 
