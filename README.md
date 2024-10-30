@@ -1,10 +1,10 @@
 # Google Calendar Manager for Event Series with Multiple Partners
-The Google Calendar Manager is a Crowd-Sourcing Application that allows you to cultivate events from multiple different people or to manage your own events for an event series. This is done through a Google Form that has a connection through the Google API to a Google Sheet. You can use this google sheet to manage a Google Calendar using the functionality of the spreadsheet. The code in the file above contains the script for the Google Sheet, allowing it to act as the middle point between the crowd-sourcing in the Google Form and uploading the info into a Google Calendar.
+The Google Calendar Manager is a Crowd-Sourcing Application that allows you to cultivate events from multiple different people or to manage your own events for an event series. Information for a individual event is entered through a Google Form that has a connection through the Google API to a Google Sheet. With this application, you can use this Google Sheet in order to manage a Google Calendar using the functionality of the spreadsheet. The code in the file above contains the script for the Google Sheet, allowing it to act as the middle point between the crowd-sourcing in the Google Form and uploading the info into a Google Calendar.
 
 The Functionality and Set-Up of the Google Sheet can be found below.
 
 # Functionality
-Through this application, you can easily create and verify events. All information that is inputted into the google form will automatically fill up the Google Sheet. 
+Through this application, you can easily create and verify events. All information that is inputted into the Google Form will automatically fill up the Google Sheet. 
 
 - you can check off boxes in the **Verification** section. This will cause the event to appear on the Google Calendar. Events that have the check removed will be taken off of the calendar.
 - You can also check off boxes in the **Mark as Incomplete** section. This makes events that are visible private, meaning only people with edit access of the calendar can see it. Private events are marked as red while Public events are marked as green.
