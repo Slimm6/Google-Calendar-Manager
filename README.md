@@ -11,7 +11,7 @@ Through this application, you can easily create and verify events. All informati
 
 The script runs automatically every hour. In the case of technical difficulties or when you wish to update the Google Calendar instantly, Go into **Extensions then go into the App Script.** Then click run. This will make the Google calendar Update. If you also wish to see the log of what has been added or removed, you can go to the **Executions** section on the side-bar of the App Script section. There, you can see the log of what has been added and deleted from the calendar.
 
-If you have any questions or concerns, please don't hesitate to email **garcia.andre@northeastern.edu** with the subject **Google Calendar Manager Help**
+If you have any questions or concerns, please don't hesitate to email **garcia.andre@northeastern.edu** with the subject **Google Calendar Manager Help.**
 
 # Set Up
 Get started by copying the following Google Sheet: https://docs.google.com/spreadsheets/d/1zCqHDdnZ2B0cgRPnOD1ce7djkkZdMZ1__bMW8m6_mWg/edit?usp=sharing
