@@ -19,6 +19,6 @@ Get started by copying the following Google Sheet: https://docs.google.com/sprea
 This will also create a copy of the Google Form, you can access it by clicking **Tools then Manage Form.**
 
 Then, you have to insert the **Google Calendar ID** into the top line of the code. Go into **Extensions then go into the App Script.** There, you should be able to see the Back-End. Insert the ID into the first line in-between the **" "**. After this, preparation is complete.
-Instructions on how to obtain the Google Calendar can be found here: https://docs.simplecalendar.io/find-google-calendar-id/
+Instructions on how to obtain the Google Calendar ID can be found here: https://docs.simplecalendar.io/find-google-calendar-id/
 
 
