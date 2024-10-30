@@ -9,7 +9,7 @@ Through this application, you can easily create and verify events. All informati
 - When you check off a box in the **Verification** section, the applicable event will be added to the calendar. Events that have the check removed will be taken off of the calendar when the script is run.
 - When you check off a box in the **Mark as Incomplete** section, it makes the applicable event on the calendar private. This means only people with edit access of the calendar can see it. Private events are marked as red while Public events are marked as green on the calendar.
 
-The script runs automatically every hour. In the case of technical difficulties or when you wish to update the Google Calendar instantly, Go into **Extensions then go into the App Script.** Then click run. This will make the google calendar update. If you also wish to see the log of what has been added or removed, you can go to the **Executions** section on the side-bar of the App Script section. There, you can see the log of what has been added and deleted from the calendar.
+The script runs automatically every hour. In the case of technical difficulties or when you wish to update the Google Calendar instantly, Go into **Extensions then go into the App Script.** Then click run. This will make the Google calendar Update. If you also wish to see the log of what has been added or removed, you can go to the **Executions** section on the side-bar of the App Script section. There, you can see the log of what has been added and deleted from the calendar.
 
 If you have any questions or concerns, please don't hesitate to email **garcia.andre@northeastern.edu** with the subject **Google Calendar Manager Help**
 
